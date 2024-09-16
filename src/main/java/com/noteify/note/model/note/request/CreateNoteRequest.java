@@ -1,4 +1,5 @@
-package com.noteify.note.model.request;
+package com.noteify.note.model.note.request;
+
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -11,11 +12,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class LoginUserRequest {
+public class CreateNoteRequest {
     @NotBlank
     @Size(max = 100)
-    private String username;
+    private String title;
+    @Size(max = 255)
     @NotBlank
-    @Size(max = 100)
-    private String password;
+    private String description;
+    private Boolean isArchieved;
 }

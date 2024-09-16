@@ -1,4 +1,4 @@
-package com.noteify.note.model.request;
+package com.noteify.note.model.user.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

@@ -12,8 +12,10 @@ Request Body :
 
 ```json
 {
-  "title" : "Catatan hari ini",
-  "description" : "deskripsi hari ini"
+  "title": "Catatan hari ini",
+  "description": "deskripsi hari ini",
+  "isArchieved" : false
+  
 }
 ```
 
@@ -22,12 +24,14 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "title" : "Catatan hari ini",
-    "description" : "deskripsi hari ini",
+    "id" : "random-string",
+    "title": "Catatan hari ini",
+    "description": "deskripsi hari ini",
+    "isArchieved": false,
     "created_at": "12/08/2024 08:00",
     "updated_at": "12/08/2024 08:00"
-  }, 
-  "errors" : null
+  },
+  "errors": null
 }
 ```
 
@@ -42,7 +46,7 @@ Response Body (Failed) :
 
 ## GET NOTE
 
-Endpoint : GET /noteify/notes
+Endpoint : GET /noteify/notes/{noteId}
 
 REQUEST HEADER :
 
@@ -53,14 +57,15 @@ Response Body (Success) :
 
 ```json
 {
-  "data": [
+  "data": 
     {
       "title": "Catatan hari ini",
       "description": "deskripsi hari ini",
+      "isArchieved": false,
       "created_at": "12/08/2024 08:00",
       "updated_at": "12/08/2024 08:00"
     }
-  ],
+  ,
   "errors": null
 }
 ```
@@ -86,8 +91,9 @@ Request Body :
 
 ```json
 {
-  "title" : "Catatan hari ini",
-  "description" : "deskripsi hari ini"
+  "title": "Catatan hari ini",
+  "description": "deskripsi hari ini",
+  "isArchieved" : false
 }
 ```
 
@@ -159,7 +165,8 @@ Request Body :
 ```json
 {
   "title" : "Catatan hari ini",
-  "description" : "deskripsi hari ini"
+  "description" : "deskripsi hari ini",
+  "isArchieved" : false
 }
 ```
 
@@ -171,6 +178,7 @@ Response Body (Success) :
     {
       "title": "Catatan hari ini",
       "description": "deskripsi hari ini",
+      "isArchieved": false,
       "created_at": "12/08/2024 08:00",
       "updated_at": "12/08/2024 08:00"
     }

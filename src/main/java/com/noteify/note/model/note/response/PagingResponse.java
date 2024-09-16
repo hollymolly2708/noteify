@@ -1,4 +1,4 @@
-package com.noteify.note.model.response;
+package com.noteify.note.model.note.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TokenResponse {
-    private String token;
-    private Long expiredAt;
+public class PagingResponse {
+    private Integer currentPage;
+    private Integer totalPage;
+    private Integer size;
+
 }

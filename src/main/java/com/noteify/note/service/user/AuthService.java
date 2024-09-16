@@ -1,11 +1,12 @@
-package com.noteify.note.service;
+package com.noteify.note.service.user;
 
 import com.noteify.note.entity.User;
-import com.noteify.note.model.request.LoginUserRequest;
-import com.noteify.note.model.request.RegisterUserRequest;
-import com.noteify.note.model.response.TokenResponse;
+import com.noteify.note.model.user.request.LoginUserRequest;
+import com.noteify.note.model.user.request.RegisterUserRequest;
+import com.noteify.note.model.user.response.TokenResponse;
 import com.noteify.note.repository.UserRepository;
 import com.noteify.note.security.BCrypt;
+import com.noteify.note.service.ValidationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

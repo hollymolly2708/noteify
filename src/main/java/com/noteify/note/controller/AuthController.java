@@ -2,16 +2,13 @@ package com.noteify.note.controller;
 
 import com.noteify.note.entity.User;
 import com.noteify.note.model.WebResponse;
-import com.noteify.note.model.request.LoginUserRequest;
-import com.noteify.note.model.request.RegisterUserRequest;
-import com.noteify.note.model.response.TokenResponse;
-import com.noteify.note.service.AuthService;
-import org.antlr.v4.runtime.Token;
+import com.noteify.note.model.user.request.LoginUserRequest;
+import com.noteify.note.model.user.request.RegisterUserRequest;
+import com.noteify.note.model.user.response.TokenResponse;
+import com.noteify.note.service.user.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
-import javax.print.attribute.standard.Media;
 
 @RestController
 public class AuthController {

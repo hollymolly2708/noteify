@@ -1,9 +1,10 @@
-package com.noteify.note.service;
+package com.noteify.note.service.user;
 
 import com.noteify.note.entity.User;
-import com.noteify.note.model.request.UpdateUserRequest;
-import com.noteify.note.model.response.UserResponse;
+import com.noteify.note.model.user.request.UpdateUserRequest;
+import com.noteify.note.model.user.response.UserResponse;
 import com.noteify.note.repository.UserRepository;
+import com.noteify.note.service.ValidationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

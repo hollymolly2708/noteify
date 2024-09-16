@@ -1,4 +1,4 @@
-package com.noteify.note.model.response;
+package com.noteify.note.model.user.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

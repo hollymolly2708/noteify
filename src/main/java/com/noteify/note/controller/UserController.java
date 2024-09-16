@@ -2,9 +2,9 @@ package com.noteify.note.controller;
 
 import com.noteify.note.entity.User;
 import com.noteify.note.model.WebResponse;
-import com.noteify.note.model.request.UpdateUserRequest;
-import com.noteify.note.model.response.UserResponse;
-import com.noteify.note.service.UserService;
+import com.noteify.note.model.user.request.UpdateUserRequest;
+import com.noteify.note.model.user.response.UserResponse;
+import com.noteify.note.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -3,8 +3,9 @@ package com.noteify.note.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
+import java.time.LocalDateTime;
 
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -15,6 +16,8 @@ public class Note {
     private String id;
     private String title;
     private String description;
+    @Column(name = "is_archieved")
+    private Boolean isArchieved;
     @Column(name = "created_at")
     private String createdAt;
     @Column(name = "updated_at")
