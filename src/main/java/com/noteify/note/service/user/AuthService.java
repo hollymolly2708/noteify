@@ -27,7 +27,7 @@ public class AuthService {
     public void register(RegisterUserRequest request) {
         validationService.validate(request);
         if (userRepository.existsById(request.getUsername())) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Username already registered");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username already registered");
         }
         User user = new User();
         user.setUsername(request.getUsername());
